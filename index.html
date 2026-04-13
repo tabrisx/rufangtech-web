@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shijiazhuang Rufang Technology Co., Ltd. | PollyPop Games</title>
     <style>
-        /* 1. 设置从左到右的线性渐变背景 */
         body, html {
             margin: 0;
             padding: 0;
@@ -17,95 +16,109 @@
             color: white;
         }
 
-        /* 2. 主体展示区域 - 左对齐 */
         .hero {
             flex: 1;
             display: flex;
             flex-direction: column;
-            justify-content: center; /* 垂直居中，若要置顶可改为 flex-start */
-            align-items: flex-start; /* 核心：水平左对齐 */
-            padding-left: 10%; /* 左侧留出页边距，模拟截图感 */
-            padding-right: 20px;
+            justify-content: center;
+            align-items: flex-start;
+            padding-left: 12%; 
+            padding-top: 50px;
         }
 
-        /* 放置你上传的两个 PNG 图片 */
-        .brand-assets {
-            display: flex;
-            align-items: center;
-            gap: 15px; /* 叶子和鹦鹉的间距 */
-            margin-bottom: 15px;
+        /* 調整 Logo 組合的位置，確保鸚鵡站在 P 上 */
+        .brand-container {
+            position: relative;
+            margin-bottom: -15px; /* 讓圖片稍微壓住文字頂部 */
+            padding-left: 10px;
         }
 
-        .brand-logo {
-            height: 120px; /* 调整图片高度 */
+        /* 葉子放在 O 的左上方 */
+        .leaf {
+            height: 60px; /* 原始尺寸感 */
             width: auto;
+            position: absolute;
+            left: 20px;
+            top: -35px;
+            opacity: 0.9;
+        }
+
+        /* 鸚鵡站在第一個 P 上 */
+        .bird {
+            height: 85px;
+            width: auto;
+            position: relative;
+            left: 105px; /* 精確對齊 P 的位置 */
+            z-index: 2;
         }
 
         h1 {
-            font-size: 4.5rem;
+            font-size: 5rem;
             margin: 0;
-            font-weight: 700;
-            letter-spacing: -1px;
-            text-align: left;
+            font-weight: 800;
+            letter-spacing: -2px;
+            line-height: 0.9;
         }
 
         .tagline {
             font-size: 1.1rem;
             text-transform: uppercase;
-            letter-spacing: 3px;
-            opacity: 0.9;
-            margin-top: 5px;
-            text-align: left;
+            font-weight: bold; /* 加粗 */
+            letter-spacing: 0.5px; /* 緊密間距 */
+            opacity: 0.95;
+            margin-top: 10px;
+            padding-left: 5px;
         }
 
-        /* 3. 底部深色信息栏 - 文字左对齐 */
         footer {
             background-color: #1a1a2e;
-            padding: 30px 10%; /* 保持与上方一致的左缩进 */
+            padding: 40px 12%;
             text-align: left;
+            /* 底部文字改為很淺的藍色 */
+            color: #d1e8ff; 
             font-size: 0.9rem;
-            line-height: 1.6;
+            line-height: 1.8;
         }
 
         .legal-name {
             font-weight: bold;
-            font-size: 1.1rem;
-            margin-bottom: 8px;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
             text-transform: uppercase;
-            letter-spacing: 1px;
+            color: #ffffff; /* 公司全名保持白色或極淺藍 */
         }
 
         .contact-details {
-            opacity: 0.7;
+            opacity: 0.8;
         }
 
-        /* 移动端适配 */
         @media (max-width: 768px) {
-            .hero { padding-left: 20px; }
-            footer { padding-left: 20px; }
-            h1 { font-size: 2.5rem; }
-            .brand-logo { height: 80px; }
+            .hero { padding-left: 30px; }
+            footer { padding-left: 30px; }
+            h1 { font-size: 3rem; }
+            .bird { height: 60px; left: 60px; }
+            .leaf { height: 40px; left: 10px; top: -20px; }
         }
     </style>
 </head>
 <body>
 
     <div class="hero">
-        <div class="brand-assets">
-            <!-- 确保文件名与你上传的 Bird.png 和 Leaves.png 完全一致 -->
-            <img src="Leaves.png" alt="Leaf" class="brand-logo">
-            <img src="Bird.png" alt="Bird" class="brand-logo">
+        <div class="brand-container">
+            <!-- 葉子與鸚鵡分別定位 -->
+            <img src="Leaves.png" alt="Leaf" class="leaf">
+            <img src="Bird.png" alt="Bird" class="bird">
         </div>
         
         <h1>PollyPop Games</h1>
-        <p class="tagline">Innovating the Future of Casual Gaming</p>
+        <p class="tagline">INNOVATING THE FUTURE OF CASUAL GAMING</p>
     </div>
 
     <footer>
         <div class="legal-name">SHIJIAZHUANG RUFANG TECHNOLOGY CO., LTD.</div>
         <div class="contact-details">
-            <!-- 重要：请在此处填入你邓白氏注册的英文详细地址 -->
-            Address: 699429736 <br>
+            <!-- 重要：請務必在此處填入你鄧白氏註冊的英文詳細地址 -->
+            Address: [Your D-U-N-S Registered English Address] <br>
             Email: tabriswx@gmail.com
         </div>
     </footer>
