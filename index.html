@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shijiazhuang Rufang Technology Co., Ltd. | PollyPop Games</title>
     <style>
-        /* 1. 精準吸色與基礎樣式 */
+        /* 1. 基础样式与渐变背景 */
         body, html {
             margin: 0;
             padding: 0;
@@ -33,22 +33,23 @@
             margin-bottom: -15px; 
         }
 
-        /* 葉子：精準定位在第一個 'o' 的頭頂 */
+        /* 叶子：位于第一个 'o' 的头顶 */
         .leaf {
             height: 30px;
             width: auto;
             position: absolute;
-            left: 105px; /* 第一個 o 的上方 */
+            left: 105px; 
             top: 45px;
             z-index: 1;
         }
 
-        /* 鸚鵡：精準踩在第二個大寫 'P' 的頭頂 */
+        /* 鹦鹉：根据要求向右移动 200px (235->435)，并向上移动 10px */
         .bird {
             height: 88px;
             width: auto;
             position: relative;
-            left: 235px; /* 第二個 P 的上方 */
+            left: 435px; /* 向右移动后的位置 */
+            top: -10px;  /* 向上移动 10 像素 */
             z-index: 2;
         }
 
@@ -72,7 +73,7 @@
             padding-left: 2px;
         }
 
-        /* 3. 底部信息欄 */
+        /* 3. 底部信息栏 */
         footer {
             background-color: #1c1c4b;
             padding: 35px 18%;
@@ -90,12 +91,12 @@
             color: #ffffff;
         }
 
-        /* 響應式調整 */
+        /* 移动端适配处理 */
         @media (max-width: 768px) {
             .hero { padding-left: 10%; }
             footer { padding-left: 10%; }
             h1 { font-size: 3rem; }
-            .bird { height: 50px; left: 120px; }
+            .bird { height: 50px; left: 210px; top: -5px; }
             .leaf { height: 18px; left: 55px; top: 30px; }
         }
     </style>
