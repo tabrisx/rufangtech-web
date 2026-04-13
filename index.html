@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shijiazhuang Rufang Technology Co., Ltd. | PollyPop Games</title>
     <style>
-        /* 1. 基礎樣式與漸變背景 */
+        /* 1. 基础样式与渐变背景 */
         body, html {
             margin: 0;
             padding: 0;
@@ -33,23 +33,23 @@
             margin-bottom: -15px; 
         }
 
-        /* 葉子：精確位於第一個小寫 'o' 的頭頂 */
+        /* 叶子：精确位于第一个小写 'o' 的头顶 */
         .leaf {
             height: 30px;
             width: auto;
             position: absolute;
-            left: 110px; /* 對齊第一個 o */
+            left: 110px; 
             top: 45px;
             z-index: 1;
         }
 
-        /* 鸚鵡：精確位於第二個大寫 'P' 的頭頂，高度保持 -25px */
+        /* 鹦鹉：精确位于第二个大写 'P' 的头顶，位置下移 30px (从 -25px 变更为 5px) */
         .bird {
             height: 88px;
             width: auto;
             position: relative;
-            left: 242px; /* 對齊中間的 P */
-            top: -25px;
+            left: 242px; 
+            top: 5px; /* 调整后的位置 */
             z-index: 2;
         }
 
@@ -73,7 +73,7 @@
             padding-left: 2px;
         }
 
-        /* 3. 底部信息欄 - 深藍底與淺藍字 */
+        /* 3. 底部信息栏 - 深蓝底与浅蓝字 */
         footer {
             background-color: #1c1c4b;
             padding: 35px 18%;
@@ -91,12 +91,12 @@
             color: #ffffff;
         }
 
-        /* 響應式處理 */
+        /* 响应式处理 */
         @media (max-width: 768px) {
             .hero { padding-left: 10%; }
             footer { padding-left: 10%; }
             h1 { font-size: 3rem; }
-            .bird { height: 50px; left: 125px; top: -12px; }
+            .bird { height: 50px; left: 125px; top: 3px; }
             .leaf { height: 18px; left: 58px; top: 25px; }
         }
     </style>
@@ -117,7 +117,7 @@
         <div class="legal-name">SHIJIAZHUANG RUFANG TECHNOLOGY CO., LTD.</div>
         <div class="contact-details">
             D-U-N-S: 699429736 &nbsp;&nbsp;&nbsp; Email: tabriswx@gmail.com <br>
-            Address: [填入你的英文詳細地址]
+            Address: [Your D-U-N-S Registered English Address]
         </div>
     </footer>
 
