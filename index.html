@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shijiazhuang Rufang Technology Co., Ltd. | PollyPop Games</title>
     <style>
-        /* 1. 精准吸色：嫩绿到草绿的横向渐变 */
+        /* 1. 精準吸色與基礎樣式 */
         body, html {
             margin: 0;
             padding: 0;
@@ -24,61 +24,60 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            padding-left: 15%; 
+            padding-left: 18%; 
         }
 
-        /* 2. 品牌元素：像素级对齐 */
+        /* 2. 品牌元素定位容器 */
         .brand-container {
             position: relative;
-            margin-bottom: -15px; /* 让图标与文字无缝衔接 */
-            margin-left: 45px;
+            margin-bottom: -15px; 
         }
 
-        /* 叶子：缩小并移动到 P 的左肩 */
+        /* 葉子：精準定位在第一個 'o' 的頭頂 */
         .leaf {
-            height: 30px; /* 进一步缩小 */
+            height: 30px;
             width: auto;
             position: absolute;
-            left: -18px;
-            top: 42px;
+            left: 105px; /* 第一個 o 的上方 */
+            top: 45px;
             z-index: 1;
         }
 
-        /* 鹦鹉：精准落在第一个 P 的头顶 */
+        /* 鸚鵡：精準踩在第二個大寫 'P' 的頭頂 */
         .bird {
-            height: 92px;
+            height: 88px;
             width: auto;
             position: relative;
-            left: 52px; 
+            left: 235px; /* 第二個 P 的上方 */
             z-index: 2;
         }
 
         h1 {
-            font-size: 6rem;
+            font-size: 5.8rem;
             margin: 0;
             font-weight: 900;
-            letter-spacing: -4px; /* 极紧凑的字母间距 */
+            letter-spacing: -3.5px; 
             line-height: 0.8;
-            transform: scaleX(1.05); /* 稍微拉宽字体 */
+            transform: scaleX(1.05); 
             transform-origin: left;
         }
 
         .tagline {
-            font-size: 0.95rem;
+            font-size: 0.9rem;
             text-transform: uppercase;
             font-weight: 800;
-            letter-spacing: -0.2px; /* Slogan 间距更紧密 */
+            letter-spacing: 0px; 
             opacity: 1;
-            margin-top: 25px;
-            padding-left: 5px;
+            margin-top: 20px;
+            padding-left: 2px;
         }
 
-        /* 3. 底部信息栏：精准还原吸色 */
+        /* 3. 底部信息欄 */
         footer {
-            background-color: #1c1c4b; /* 深蓝色底 */
-            padding: 35px 15%;
+            background-color: #1c1c4b;
+            padding: 35px 18%;
             text-align: left;
-            color: #a9b8d2; /* 浅蓝色字 */
+            color: #a9b8d2; 
             font-size: 0.85rem;
             line-height: 2;
         }
@@ -88,16 +87,16 @@
             font-size: 1.1rem;
             margin-bottom: 5px;
             text-transform: uppercase;
-            color: #ffffff; /* 公司全称纯白 */
+            color: #ffffff;
         }
 
-        /* 响应式调整 */
+        /* 響應式調整 */
         @media (max-width: 768px) {
             .hero { padding-left: 10%; }
-            footer { padding: 30px 10%; }
-            h1 { font-size: 3.5rem; letter-spacing: -2px; }
-            .bird { height: 60px; left: 32px; }
-            .leaf { height: 20px; left: -12px; top: 28px; }
+            footer { padding-left: 10%; }
+            h1 { font-size: 3rem; }
+            .bird { height: 50px; left: 120px; }
+            .leaf { height: 18px; left: 55px; top: 30px; }
         }
     </style>
 </head>
@@ -116,7 +115,8 @@
     <footer>
         <div class="legal-name">SHIJIAZHUANG RUFANG TECHNOLOGY CO., LTD.</div>
         <div class="contact-details">
-            D-U-N-S: 699429736 &nbsp;&nbsp;&nbsp; Email: tabriswx@gmail.com
+            D-U-N-S: 699429736 &nbsp;&nbsp;&nbsp; Email: tabriswx@gmail.com <br>
+            Address: [Your D-U-N-S Registered English Address]
         </div>
     </footer>
 
