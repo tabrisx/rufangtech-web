@@ -1,4 +1,3 @@
-html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,7 +33,7 @@ html
             margin-bottom: -15px; 
         }
 
-        /* 叶子：精确位于第一个小写 'o' 的头顶 */
+        /* 叶子：位于第一个 'o' 的头顶 */
         .leaf {
             height: 30px;
             width: auto;
@@ -44,13 +43,13 @@ html
             z-index: 1;
         }
 
-        /* 鹦鹉：精确位于第二个大写 'P' 的头顶，位置上移 15px (从 5px 变更为 -10px) */
+        /* 鹦鹉：在 -10px 基础上再上移 10px，共计 -20px */
         .bird {
             height: 88px;
             width: auto;
             position: relative;
             left: 242px; 
-            top: -10px; /* 调整后的位置 */
+            top: -20px; /* 强制上移后的位置 */
             z-index: 2;
         }
 
@@ -74,7 +73,7 @@ html
             padding-left: 2px;
         }
 
-        /* 3. 底部信息栏 - 深蓝底与浅蓝字 */
+        /* 3. 底部信息栏 */
         footer {
             background-color: #1c1c4b;
             padding: 35px 18%;
@@ -92,12 +91,12 @@ html
             color: #ffffff;
         }
 
-        /* 响应式处理 */
+        /* 移动端适配 */
         @media (max-width: 768px) {
             .hero { padding-left: 10%; }
             footer { padding-left: 10%; }
             h1 { font-size: 3rem; }
-            .bird { height: 50px; left: 125px; top: -5px; }
+            .bird { height: 50px; left: 125px; top: -10px; }
             .leaf { height: 18px; left: 58px; top: 25px; }
         }
     </style>
