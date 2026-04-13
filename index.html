@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shijiazhuang Rufang Technology Co., Ltd. | PollyPop Games</title>
     <style>
-        /* 1. 基礎樣式與漸變背景 */
+        /* 1. 基础样式与渐变背景 */
         body, html {
             margin: 0;
             padding: 0;
@@ -33,7 +33,7 @@
             margin-bottom: -15px; 
         }
 
-        /* 葉子：位於第一個 'o' 的頭頂 */
+        /* 叶子：位于第一个 'o' 的头顶 */
         .leaf {
             height: 30px;
             width: auto;
@@ -43,13 +43,13 @@
             z-index: 1;
         }
 
-        /* 鸚鵡：向右移動 200px (435px)，並再次向上移動 15px (總計 -25px) */
+        /* 鹦鹉：从 435px 向左移动 306px，最终 left 为 129px，高度保持 -25px */
         .bird {
             height: 88px;
             width: auto;
             position: relative;
-            left: 435px; 
-            top: -25px;  /* 調整後的位置 */
+            left: 129px; 
+            top: -25px;
             z-index: 2;
         }
 
@@ -73,7 +73,7 @@
             padding-left: 2px;
         }
 
-        /* 3. 底部信息欄 */
+        /* 3. 底部信息栏 */
         footer {
             background-color: #1c1c4b;
             padding: 35px 18%;
@@ -91,13 +91,13 @@
             color: #ffffff;
         }
 
-        /* 響應式處理 */
+        /* 移动端适配处理 */
         @media (max-width: 768px) {
             .hero { padding-left: 10%; }
             footer { padding-left: 10%; }
             h1 { font-size: 3rem; }
-            .bird { height: 50px; left: 210px; top: -12px; }
-            .leaf { height: 18px; left: 55px; top: 30px; }
+            .bird { height: 50px; left: 60px; top: -12px; }
+            .leaf { height: 18px; left: 50px; top: 30px; }
         }
     </style>
 </head>
