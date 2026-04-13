@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shijiazhuang Rufang Technology Co., Ltd. | PollyPop Games</title>
     <style>
+        /* 1. 设置从左到右的线性渐变背景 */
         body, html {
             margin: 0;
             padding: 0;
@@ -16,26 +17,27 @@
             color: white;
         }
 
+        /* 2. 主体展示区域 - 左对齐 */
         .hero {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start;
+            align-items: flex-start; 
             padding-left: 12%; 
             padding-top: 50px;
         }
 
-        /* 調整 Logo 組合的位置，確保鸚鵡站在 P 上 */
+        /* 品牌元素容器 */
         .brand-container {
             position: relative;
-            margin-bottom: -15px; /* 讓圖片稍微壓住文字頂部 */
+            margin-bottom: -15px; /* 压住下方文字顶部 */
             padding-left: 10px;
         }
 
-        /* 葉子放在 O 的左上方 */
+        /* 叶子：放在 O 的左上方，使用原始尺寸感 */
         .leaf {
-            height: 60px; /* 原始尺寸感 */
+            height: 60px;
             width: auto;
             position: absolute;
             left: 20px;
@@ -43,20 +45,20 @@
             opacity: 0.9;
         }
 
-        /* 鸚鵡站在第一個 P 上 */
+        /* 鹦鹉：精准对齐在第一个 P 上方 */
         .bird {
             height: 85px;
             width: auto;
             position: relative;
-            left: 105px; /* 精確對齊 P 的位置 */
+            left: 105px; 
             z-index: 2;
         }
 
         h1 {
             font-size: 5rem;
             margin: 0;
-            font-weight: 800;
-            letter-spacing: -2px;
+            font-weight: 800; /* 极粗 */
+            letter-spacing: -2px; /* 紧凑间距 */
             line-height: 0.9;
         }
 
@@ -64,18 +66,18 @@
             font-size: 1.1rem;
             text-transform: uppercase;
             font-weight: bold; /* 加粗 */
-            letter-spacing: 0.5px; /* 緊密間距 */
+            letter-spacing: 0.5px; /* 紧凑间距 */
             opacity: 0.95;
             margin-top: 10px;
             padding-left: 5px;
         }
 
+        /* 3. 底部信息栏 - 浅蓝色文字 */
         footer {
             background-color: #1a1a2e;
             padding: 40px 12%;
             text-align: left;
-            /* 底部文字改為很淺的藍色 */
-            color: #d1e8ff; 
+            color: #d1e8ff; /* 浅蓝色文字 */
             font-size: 0.9rem;
             line-height: 1.8;
         }
@@ -85,13 +87,14 @@
             font-size: 1.2rem;
             margin-bottom: 10px;
             text-transform: uppercase;
-            color: #ffffff; /* 公司全名保持白色或極淺藍 */
+            color: #ffffff; /* 公司全称保持白色，更醒目 */
         }
 
         .contact-details {
             opacity: 0.8;
         }
 
+        /* 移动端适配 */
         @media (max-width: 768px) {
             .hero { padding-left: 30px; }
             footer { padding-left: 30px; }
@@ -105,7 +108,7 @@
 
     <div class="hero">
         <div class="brand-container">
-            <!-- 葉子與鸚鵡分別定位 -->
+            <!-- 确保文件名与你上传的 Bird.png 和 Leaves.png 完全一致 -->
             <img src="Leaves.png" alt="Leaf" class="leaf">
             <img src="Bird.png" alt="Bird" class="bird">
         </div>
@@ -117,7 +120,8 @@
     <footer>
         <div class="legal-name">SHIJIAZHUANG RUFANG TECHNOLOGY CO., LTD.</div>
         <div class="contact-details">
-            <!-- 重要：請務必在此處填入你鄧白氏註冊的英文詳細地址 -->
+            <!-- 已将 D-U-N-S 编号加入此处 -->
+            D-U-N-S Number: 699429736 <br>
             Address: [Your D-U-N-S Registered English Address] <br>
             Email: tabriswx@gmail.com
         </div>
