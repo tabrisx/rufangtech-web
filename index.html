@@ -5,102 +5,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shijiazhuang Rufang Technology Co., Ltd. | PollyPop Games</title>
     <style>
-        /* 1. 设置从左到右的线性渐变背景 */
+        /* 1. 精准吸色：嫩绿到草绿的横向渐变 */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: 'Segoe UI', Helvetica, Arial, sans-serif;
-            background: linear-gradient(to right, #aadd55 0%, #77bb33 100%);
+            font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+            background: linear-gradient(to right, #98e154 0%, #bcde68 100%);
             display: flex;
             flex-direction: column;
             color: white;
+            -webkit-font-smoothing: antialiased;
         }
 
-        /* 2. 主体展示区域 - 左对齐 */
         .hero {
             flex: 1;
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: flex-start; 
-            padding-left: 12%; 
-            padding-top: 50px;
+            align-items: flex-start;
+            padding-left: 15%; 
         }
 
-        /* 品牌元素容器 */
+        /* 2. 品牌元素：像素级对齐 */
         .brand-container {
             position: relative;
-            margin-bottom: -15px; /* 压住下方文字顶部 */
-            padding-left: 10px;
+            margin-bottom: -15px; /* 让图标与文字无缝衔接 */
+            margin-left: 45px;
         }
 
-        /* 叶子：放在 O 的左上方，使用原始尺寸感 */
+        /* 叶子：缩小并移动到 P 的左肩 */
         .leaf {
-            height: 60px;
+            height: 30px; /* 进一步缩小 */
             width: auto;
             position: absolute;
-            left: 20px;
-            top: -35px;
-            opacity: 0.9;
+            left: -18px;
+            top: 42px;
+            z-index: 1;
         }
 
-        /* 鹦鹉：精准对齐在第一个 P 上方 */
+        /* 鹦鹉：精准落在第一个 P 的头顶 */
         .bird {
-            height: 85px;
+            height: 92px;
             width: auto;
             position: relative;
-            left: 105px; 
+            left: 52px; 
             z-index: 2;
         }
 
         h1 {
-            font-size: 5rem;
+            font-size: 6rem;
             margin: 0;
-            font-weight: 800; /* 极粗 */
-            letter-spacing: -2px; /* 紧凑间距 */
-            line-height: 0.9;
+            font-weight: 900;
+            letter-spacing: -4px; /* 极紧凑的字母间距 */
+            line-height: 0.8;
+            transform: scaleX(1.05); /* 稍微拉宽字体 */
+            transform-origin: left;
         }
 
         .tagline {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             text-transform: uppercase;
-            font-weight: bold; /* 加粗 */
-            letter-spacing: 0.5px; /* 紧凑间距 */
-            opacity: 0.95;
-            margin-top: 10px;
+            font-weight: 800;
+            letter-spacing: -0.2px; /* Slogan 间距更紧密 */
+            opacity: 1;
+            margin-top: 25px;
             padding-left: 5px;
         }
 
-        /* 3. 底部信息栏 - 浅蓝色文字 */
+        /* 3. 底部信息栏：精准还原吸色 */
         footer {
-            background-color: #1a1a2e;
-            padding: 40px 12%;
+            background-color: #1c1c4b; /* 深蓝色底 */
+            padding: 35px 15%;
             text-align: left;
-            color: #d1e8ff; /* 浅蓝色文字 */
-            font-size: 0.9rem;
-            line-height: 1.8;
+            color: #a9b8d2; /* 浅蓝色字 */
+            font-size: 0.85rem;
+            line-height: 2;
         }
 
         .legal-name {
             font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
             text-transform: uppercase;
-            color: #ffffff; /* 公司全称保持白色，更醒目 */
+            color: #ffffff; /* 公司全称纯白 */
         }
 
-        .contact-details {
-            opacity: 0.8;
-        }
-
-        /* 移动端适配 */
+        /* 响应式调整 */
         @media (max-width: 768px) {
-            .hero { padding-left: 30px; }
-            footer { padding-left: 30px; }
-            h1 { font-size: 3rem; }
-            .bird { height: 60px; left: 60px; }
-            .leaf { height: 40px; left: 10px; top: -20px; }
+            .hero { padding-left: 10%; }
+            footer { padding: 30px 10%; }
+            h1 { font-size: 3.5rem; letter-spacing: -2px; }
+            .bird { height: 60px; left: 32px; }
+            .leaf { height: 20px; left: -12px; top: 28px; }
         }
     </style>
 </head>
@@ -108,7 +105,6 @@
 
     <div class="hero">
         <div class="brand-container">
-            <!-- 确保文件名与你上传的 Bird.png 和 Leaves.png 完全一致 -->
             <img src="Leaves.png" alt="Leaf" class="leaf">
             <img src="Bird.png" alt="Bird" class="bird">
         </div>
@@ -120,10 +116,7 @@
     <footer>
         <div class="legal-name">SHIJIAZHUANG RUFANG TECHNOLOGY CO., LTD.</div>
         <div class="contact-details">
-            <!-- 已将 D-U-N-S 编号加入此处 -->
-            D-U-N-S Number: 699429736 <br>
-            Address: [Your D-U-N-S Registered English Address] <br>
-            Email: tabriswx@gmail.com
+            D-U-N-S: 699429736 &nbsp;&nbsp;&nbsp; Email: tabriswx@gmail.com
         </div>
     </footer>
 
